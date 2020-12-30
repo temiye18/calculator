@@ -1,0 +1,178 @@
+body {
+  text-align: center;
+  background-color: #1b1b18;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header {
+  margin: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  background: linear-gradient(to right, #540fab 2%, #860e7f 49%, #350ab6 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.calculator {
+  margin-top: 3rem;
+  text-align: center;
+  animation-duration: 2s;
+}
+
+#display {
+  font-family: "Source Sans Pro", sans-serif;
+  border-bottom: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+input {
+  font-size: 15px;
+  border: 2px solid rebeccapurple;
+  text-align: right;
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 4px;
+  padding: 20px 30px;
+  outline: none;
+}
+input.clear {
+  padding: 20px 60px;
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+input.delete {
+  padding: 20px 50px;
+}
+input[value="1"],
+input[value="3"],
+input[value="5"],
+input[value="7"],
+input[value="9"],
+input[value="="] {
+  background: linear-gradient(to right, #540fab 2%, #860e7f 49%, #350ab6 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input[type="button"] {
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all ease-in-out 0.5s;
+}
+input[type="button"]:hover {
+  background-color: rebeccapurple;
+  color: white;
+  border: #1b1b18;
+  transform: scale(1);
+}
+input.clear:hover {
+  background-color: red;
+}
+
+#button-section {
+  margin-top: 5px;
+}
+footer p {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 13px;
+  margin-top: 1.5rem;
+  font-style: oblique;
+}
+footer p span {
+  font-size: 20px;
+}
+
+/* media queries */
+@media only screen and (max-width: 420px) {
+  input[type="button"] {
+    font-size: 10px;
+    border: 2px solid rebeccapurple;
+    font-size: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 3px;
+    padding: 8px 17px;
+    outline: none;
+  }
+  input.clear {
+    padding: 17px 30px;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+  }
+
+  input.delete {
+    padding: 17px 33px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  div.calculator {
+    margin-top: 2rem;
+  }
+  .header {
+    margin: 5px;
+    font-size: 3rem;
+  }
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 569px) {
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1032px) {
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1268px) {
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  #display {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    width: 20%;
+  }
+}

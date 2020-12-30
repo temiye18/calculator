@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">CAlCULATOR</h1>
+    </header>
+    <div class="calculator animate__animated animate__rollIn">
+      <form>
+        <input
+          type="text"
+          name="livescreen"
+          id="display"
+          placeholder="Input a number"
+          readonly
+        /><br />
+        <div id="button-section">
+          <input type="button" value="1" onclick="wrte(1)" />
+          <input type="button" value="2" onclick="wrte(2)" />
+          <input type="button" value="3" onclick="wrte(3)" />
+          <input type="button" value="+" onclick="wrte(' + ')" /> <br />
+          <input type="button" value="4" onclick="wrte(4)" />
+          <input type="button" value="5" onclick="wrte(5)" />
+          <input type="button" value="6" onclick="wrte(6)" />
+          <input type="button" value="-" onclick="wrte(' - ')" /> <br />
+          <input type="button" value="7" onclick="wrte(7)" />
+          <input type="button" value="8" onclick="wrte(8)" />
+          <input type="button" value="9" onclick="wrte(9)" />
+          <input type="button" value="*" onclick="wrte(' * ')" /> <br />
+          <input type="button" value="0" onclick="wrte(0)" />
+          <input
+            type="button"
+            value="="
+            onclick="display.value = eval(display.value)"
+          />
+          <input type="button" value="/" onclick="wrte(' / ')" />
+          <input type="button" value="." onclick="wrte('.')" /> <br />
+          <input type="button" class="delete" value="DELETE" onclick="del()" />
+          <input type="button" class="clear" value="CLR" onclick="clr()" />
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>Created by Temiye & Seyi <span>🤝 </span></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
